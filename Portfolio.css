@@ -1,0 +1,407 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ECF0F1;
+    color: #333333;
+    line-height: 1.6;
+    padding-top: 80px; 
+}
+
+/* Header fixe */
+header {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #2980B9; 
+}
+
+.cta-button {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des sections */
+section {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+    color: #333333;
+}
+
+/* Styles pour la section d'accueil */
+#accueil {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+}
+
+.photo-profil {
+    width: 200px; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+.texte {
+    max-width: 600px; 
+    text-align: left; 
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+}
+
+p {
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+}
+
+/* Style du bouton CTA */
+.cta-button {
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #2980B9; 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.cta-button:hover {
+    background-color: #1A5E85; 
+}
+
+/* Section À propos */
+
+#apropos {
+   background-color: #F5F5F5;
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#apropos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#apropos p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#apropos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+#apropos ul li {
+    font-size: 18px;
+    color: #2C3E50;
+    background-color: #ECF0F1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#apropos p:last-of-type {
+    margin-top: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Section Compétences */
+#competences {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#competences h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000201;
+    font-family: 'Merriweather', serif;
+}
+
+#competences .competences-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes fixes */
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 20px;
+    overflow-x: auto; /* Permet un scroll horizontal si l'écran est trop petit */
+}
+
+#competences .competence-carte {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    min-width: 220px;
+}
+
+#competences .competence-carte:hover {
+    transform: translateY(-5px);
+}
+
+#competences .competence-carte h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000201;
+}
+
+#competences .competence-carte ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+#competences .competence-carte li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Responsive mobile : empile les cartes */
+@media screen and (max-width: 768px) {
+    #competences .competences-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 10px;
+    }
+
+    #competences .competence-carte {
+        width: 100%;
+    }
+}
+
+#realisations {
+    padding: 50px 0;
+    background-color: #2C3E50;
+    text-align: center;
+    color: white;
+}
+
+#realisations h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.projet {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #2980B9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projet:hover {
+    transform: scale(1.05);
+}
+
+.projet img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #292929;
+    box-shadow: 0 4px 10px ;
+}
+
+.projet h3 {
+    font-size: 1.8em;
+    margin: 15px 0;
+    color: #2980B9 ;
+}
+
+.projet p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+/* Section Contact */
+#contact {
+    background-color: #F0F2F5;
+    padding: 60px 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+#contact form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    border-color: #2980B9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+}
+
+#contact form button {
+    background-color: #2980B9;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #1A5E85;
+}
+
+/* Contact info en bas */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-info div img {
+    margin-right: 15px;
+}
+
+.contact-info div p {
+    font-size: 1.2em;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    text-align: center; 
+    justify-content: space-around; 
+    padding: 20px; 
+    background-color: #2C3E50; 
+    color: #FFFFFF; 
+    
+}
+
+footer p {
+    margin: 0; 
+    font-size: 1em; 
+    color: #FFFFFF;
+    
+}
+
+.social-icons {
+    display: flex;
+    margin: 0; 
+    
+}
+
+.social-icons a {
+    margin: 0 10px; 
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px;  
+}
+
+
+
